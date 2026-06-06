@@ -42,6 +42,15 @@
         .section-title { font-size: 2rem; font-weight: 700; margin-bottom: 2rem; position: relative; padding-bottom: 0.5rem; }
         .section-title::after { content: ''; position: absolute; bottom: 0; left: 0; width: 50px; height: 2px; background: var(--accent-cyan); }
 
+        /* Journey / Experience Timeline styling */
+        .timeline { position: relative; border-left: 2px solid var(--border-color); padding-left: 2rem; margin-left: 0.5rem; }
+        .timeline-item { position: relative; margin-bottom: 3rem; }
+        .timeline-item::before { content: ''; position: absolute; left: calc(-2rem - 7px); top: 0.25rem; width: 12px; height: 12px; border-radius: 50%; background: var(--accent-cyan); border: 2px solid var(--bg-main); }
+        .timeline-date { font-size: 0.85rem; color: var(--accent-cyan); font-weight: 600; text-transform: uppercase; margin-bottom: 0.25rem; }
+        .timeline-title { font-size: 1.25rem; color: var(--text-primary); font-weight: 600; }
+        .timeline-company { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 0.75rem; font-weight: 500; }
+        .timeline-desc { color: var(--text-secondary); font-size: 0.95rem; }
+
         /* Featured Systems / Projects Grid */
         .project-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
         .project-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; transition: transform 0.2s, border-color 0.2s; position: relative; overflow: hidden; }
@@ -80,9 +89,10 @@
         <div class="logo">SUMBUL ZAHRA</div>
         <div class="links">
             <a href="#about">About</a>
+            <a href="#journey">Journey</a>
             <a href="#systems">Systems</a>
             <a href="#skills">Skills Matrix</a>
-            <a href="https://github.com/Sumbulzahra" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/miss-s-zahra/" target="_blank">LinkedIn</a>
         </div>
     </nav>
 
@@ -111,6 +121,41 @@
     </header>
 
     <div class="container">
+        
+        <section id="journey">
+            <h2 class="section-title">Professional Journey</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Active Focus</div>
+                    <div class="timeline-title">Aspiring DevOps Engineer</div>
+                    <div class="timeline-company">Technical Specialization & Career Transition</div>
+                    <div class="timeline-desc">
+                        Accelerating core proficiencies in advanced deployment strategies. Actively engineering automated CI/CD pipelines, container orchestration environments, and configuring cloud resource lifecycles to optimize production workflows.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Core Experience</div>
+                    <div class="timeline-title">Linux System Administrator</div>
+                    <div class="timeline-company">Infrastructure & Systems Management</div>
+                    <div class="timeline-desc">
+                        Provisioning, monitoring, and debugging critical enterprise Linux configurations. Developed custom operational automation frameworks, structured automated log-rotation configurations, and managed granular platform user policies.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Academic & Credentials</div>
+                    <div class="timeline-title">Academic Foundation & Cybersecurity Specialization</div>
+                    <div class="timeline-company">BS General Science & Diploma in Cloud Cyber Security</div>
+                    <div class="timeline-desc">
+                        Synthesized structured system-level logic with advanced defensive network blueprints. Designed secure cloud-ready architectural structures matching modern enterprise data protection mandates.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
         <section id="systems">
             <h2 class="section-title">Featured Systems</h2>
             <div class="project-grid">
@@ -118,7 +163,7 @@
                 <div class="project-card">
                     <div class="project-status">Live</div>
                     <h3>EasyShop Application Stack</h3>
-                    <div class="subtitle">Cloud-Native Microservices Deployment Deployment Platform</div>
+                    <div class="subtitle">Cloud-Native Microservices Deployment Platform</div>
                     <p>A resilient containerized deployment strategy showcasing complete container lifecycle orchestration, localized network segmentation routing, and dedicated persistent volume mapping schemas.</p>
                     <div class="tags">
                         <span class="tag">Kubernetes</span>
@@ -188,7 +233,7 @@
         <p>Connect for infrastructure engineering, infrastructure pipeline audits, and system tracking.</p>
         <div style="margin: 1.5rem 0;">
             <a href="https://github.com/Sumbulzahra" target="_blank">GitHub Platform</a> | 
-            <a href="https://linkedin.com" target="_blank">LinkedIn Profile</a>
+            <a href="https://www.linkedin.com/in/miss-s-zahra/" target="_blank">LinkedIn Profile</a>
         </div>
         <p class="footer-credit">Built using premium semantic layout primitives | Host Engine: GitHub Pages | الحمد لله</p>
     </footer>
