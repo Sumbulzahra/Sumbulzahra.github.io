@@ -3,10 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Sumbul Zahra | DevOps & Cloud Portfolio</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #0f172a; color: #e2e8f0; line-height: 1.6; }
+        header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 5rem 2rem; text-align: center; border-bottom: 2px solid #334155; }
+        header h1 { color: #38bdf8; font-size: 2.5rem; margin-bottom: 0.5rem; }
+        header p { color: #94a3b8; font-size: 1.2rem; max-width: 600px; margin: 0 auto; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        section { margin-bottom: 4rem; }
+        h2 { color: #38bdf8; font-size: 1.8rem; margin-bottom: 1.5rem; border-bottom: 1px solid #334155; padding-bottom: 0.5rem; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
+        .skill-card { background-color: #1e293b; padding: 1.5rem; border-radius: 8px; border: 1px solid #334155; }
+        .skill-card h3 { color: #f8fafc; font-size: 1.1rem; margin-bottom: 0.75rem; }
+        .skill-card ul { list-style: none; color: #94a3b8; font-size: 0.95rem; }
+        .skill-card li { margin-bottom: 0.4rem; }
+        .project-card { background-color: #1e293b; pading: 2rem; padding: 2rem; border-radius: 8px; border: 1px solid #334155; margin-bottom: 1.5rem; }
+        .project-card h3 { color: #f8fafc; margin-bottom: 0.5rem; }
+        .tags { margin: 0.75rem 0; }
+        .tag { background-color: #0284c7; color: #fff; padding: 0.2rem 0.6rem; font-size: 0.8rem; border-radius: 4px; margin-right: 0.5rem; display: inline-block; }
+        .project-card p { color: #94a3b8; margin-bottom: 1rem; }
+        .btn { display: inline-block; background-color: #38bdf8; color: #0f172a; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.9rem; transition: background 0.2s; }
+        .btn:hover { background-color: #7dd3fc; }
+        footer { text-align: center; padding: 2rem; color: #64748b; font-size: 0.9rem; border-top: 1px solid #334155; }
+        footer a { color: #38bdf8; text-decoration: none; margin: 0 0.5rem; }
+    </style>
 </head>
 <body>
-    <h1>Welcome to my Portfolio Website!</h1>
-    <p>Site is currently under construction.</p>
+
+    <header>
+        <h1>Sumbul Zahra</h1>
+        <p>Linux System Administrator & Aspiring DevOps Engineer</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Passionate infrastructure professional focused on automation, containerization, and optimizing CI/CD deployment pipelines. Experienced in managing Linux systems and building scalable architecture in cloud environments.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Operating Systems</h3>
+                    <ul>
+                        <li>Linux (RHEL/Ubuntu)</li>
+                        <li>Bash & Shell Scripting</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>DevOps & Tools</h3>
+                    <ul>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Cloud Services</h3>
+                    <ul>
+                        <li>AWS (EC2, S3, IAM)</li>
+                        <li>Infrastructure Security</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            
+            <div class="project-card">
+                <h3>EasyShop Cloud-Native Deployment</h3>
+                <div class="tags">
+                    <span class="tag">Kubernetes</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">MongoDB</span>
+                </div>
+                <p>Successfully containerized and deployed a three-tier cloud-native microservices application. Configured automated scaling groups, storage volumes, and strict routing environment layouts inside a local development environment.</p>
+                <a href="https://github.com/Sumbulzahra" class="btn" target="_blank">View on GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Infrastructure Automation Toolkit</h3>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Bash</span>
+                    <span class="tag">Linux Admin</span>
+                </div>
+                <p>Developed custom automation shell scripts and rule-based components for log rotations, system back-up distributions, and dynamic infrastructure monitoring metrics tracking.</p>
+                <a href="https://github.com/Sumbulzahra" class="btn" target="_blank">View on GitHub</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sumbul Zahra. Connect with me on 
+            <a href="https://github.com/Sumbulzahra" target="_blank">GitHub</a> | 
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
+
 </body>
 </html>
